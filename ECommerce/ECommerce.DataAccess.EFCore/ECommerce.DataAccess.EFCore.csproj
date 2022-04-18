@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.DataAccess.EFCore\Common.DataAccess.EFCore.csproj" ReferenceOutputAssembly="true" />
+    <ProjectReference Include="..\..\Common\Common.Entities\Common.Entities.csproj" ReferenceOutputAssembly="true" />
+    <ProjectReference Include="..\ECommerce.Entities\ECommerce.Entities.csproj" ReferenceOutputAssembly="true" />
+    <ProjectReference Include="..\..\Common\Common.Services.Infrastructure\Common.Services.Infrastructure.csproj" ReferenceOutputAssembly="true" />
+    <ProjectReference Include="..\ECommerce.Services.Infrastructure\ECommerce.Services.Infrastructure.csproj" ReferenceOutputAssembly="true" />
+    <ProjectReference Include="..\..\Common\Common.Utils\Common.Utils.csproj" ReferenceOutputAssembly="true" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.2" />
+    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="3.0.40" />
+  </ItemGroup>
+</Project>

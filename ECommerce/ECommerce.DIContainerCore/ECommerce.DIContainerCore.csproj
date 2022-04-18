@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.DataAccess.EFCore\Common.DataAccess.EFCore.csproj" ReferenceOutputAssembly="true" />
+    <ProjectReference Include="..\ECommerce.DataAccess.EFCore\ECommerce.DataAccess.EFCore.csproj" ReferenceOutputAssembly="true" />
+    <ProjectReference Include="..\ECommerce.Services\ECommerce.Services.csproj" ReferenceOutputAssembly="true" />
+  </ItemGroup>
+
+</Project>
